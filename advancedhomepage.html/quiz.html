@@ -1,0 +1,94 @@
+<html lang="en">
+    <head>
+        <title>
+            Quiz
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="javascript" href="quiz.js">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+    <style>
+        h1 {color: #3b3a30; font-weight: bold}
+        body {background-color: #eaece5;}
+        h2 {font-size:24px; padding:10px}
+        label {padding: 5px;}
+    </style>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <div class="topnav">
+            <a class="top" href="home.html" >Home</a>
+            <a class="top" href="travel.html" >Travel</a>
+            <a class="top" href="music.html" >Music</a>
+            <a class="top" href="food.html" >Food</a>
+            <a class="top" href="hobbies.html" >Hobbies</a>
+            <a class="top" href="quiz.html" >Quiz</a>
+        </div>
+        <br>
+        <div id="main">
+        <div id="header">
+        <h1>Get to Know Me Quiz</h1>
+        </div>
+        <br>
+        <form id="form1">
+
+        <h2>Which is correct about me?</h2>
+        <label for="maj_freshman"><input type="radio" name="major" value="25" id="maj_freshman" />I am a freshman, a computer science major.</label>
+        <label for="maj_sophomore"><input type="radio" name="major" value="0" id="maj_sophomore" />I am a sophomore, a psychology major.</label>
+        <label for="maj_junior"><input type="radio" name="major" value="0" id="maj_junior" />I am a junior, a biology major.</label>
+        <label for="maj_senior"><input type="radio" name="major" value="0" id="maj_senior"/>I am a senior, a computer engineering major.</label>
+
+        <h2>Which of these places have I NOT been to?</h2>
+        <label for="cit_jakarta"><input type="radio" name="city" value="0" id="cit_jakarta"/>Jakarta</label>
+        <label for="cit_semarang"><input type="radio" name="city" value="0" id="cit_semarang"/>Semarang</label>
+        <label for="cit_philadelphia"><input type="radio" name="city" value="0" id="cit_philadelphia" />Philadelphia</label>
+        <label for="cit_losangeles"><input type="radio" name="city" value="25" id="cit_losangeles" />Los Angeles</label>
+
+        <h2>Which is one of my favorite artists?</h2>
+        <label for="art_us"><input type="radio" name="artist" value="25" id="art_us" />Us the Duo</label>
+        <label for="art_taylor"><input type="radio" name="artist" value="0" id="art_taylor" />Taylor Swift</label>
+        <label for="art_john"><input type="radio" name="artist" value="0" id="art_john" />John Legend</label>
+        <label for="art_jonas"><input type="radio" name="artist" value="0" id="art_jonas" />Jonas Brothers</label>
+
+        <h2>I love fries and hotpot.</h2>
+        <label for="bool_true"><input type="radio" name="boolean" value="25" id="bool_true" />True</label>
+        <label for="bool_false"><input type="radio" name="boolean" value="0" id="bool_false" />False</label>
+        <br>
+        <button type="submit" value="Submit">Submit</button>
+        <br><br>
+        <p>Your grade is: <span id="grade">__</span></p>
+        <p id="grade2"></p>
+        </div>
+        <script>
+            document.getElementById("form1").onsubmit=function() {
+                   major = parseInt(document.querySelector('input[name = "major"]:checked').value);
+            	   city = parseInt(document.querySelector('input[name = "city"]:checked').value);
+            	   artist = parseInt(document.querySelector('input[name = "artist"]:checked').value);
+            	   boolean = parseInt(document.querySelector('input[name = "boolean"]:checked').value);
+            	   result = major + city + artist + boolean;
+            	document.getElementById("grade").innerHTML = result;
+            if (result == 0) {result2 = "You don't know me at all.<br></br><img src='https://media.tenor.com/images/43f4b21639833e7ec3b504fcd5a0f402/tenor.gif' width='300' />"};
+            if (result == 25) {result2 = "You should try again..."};
+            if (result == 50) {result2 = "You should try again..."};
+            if (result == 75) {result2 = "So close. Try again."};
+            if (result == 100) {result2 = "You got everything correct!<br></br><img src='https://gif-free.com/uploads/posts/2017-12/1514046928_congratulations-fireworks.gif' width='300' />"};
+            document.getElementById("grade2").innerHTML = result2
+            return false;
+            }
+        </script>
+        </form><br>
+        </br>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="hobbies.html">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="home.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="travel.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="music.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="food.html">4</a></li>
+            <li class="page-item"><a class="page-link" href="hobbies.html">5</a></li>
+            <li class="page-item active"><a class="page-link" href="quiz.html">6</a></li>
+            <li class="page-item disabled"><a class="page-link" href="quiz.html">Next</a></li>
+          </ul>
+        </nav>
+    </body>

@@ -1,0 +1,97 @@
+.name
+{
+    text-align: center;
+    color: skyblue;
+    font-size: 24;
+    font-family: sans-serif;
+}
+.greeting
+{
+    font-weight: bold;
+    text-align: center;
+}
+.introduction
+{
+    margin: 0;
+    text-align: center;
+}
+.tu, .coding, .erin
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 160px;
+    width: 130px;
+    padding: 10px;
+}
+.topnav
+{
+    border-style: hidden;
+    background-color: #3b3a30;
+    word-spacing: 150px;
+    text-align: center;
+}
+.active
+{
+    border-style: hidden;
+}
+.dropdown
+{
+    text-align: center;
+    padding: 0px;
+}
+.fb, .li, .ig
+{
+    height: 40px;
+    width: 40px;
+    text-align: justify;
+}
+.travelspots
+{
+    padding: 50px;
+    margin-left: 410px;
+}
+.Maryland, .Pennsylvania, .WashingtonDC, .Florida, .Jakarta, .Semarang
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 270px;
+    text-align: center;
+}
+.traveltext
+{
+    text-align: center;
+    color:#3b3a30;
+}
+.carousel
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+.galbi, .hotpot, .burger, .steakandfries
+{
+    height:350px;
+    width:500px;
+}
+.hobbies
+{
+    height:200px;
+    width: 300px;
+    text-align: center;
+    display: block;
+}
+.texthobbies
+{
+    text-align: center;
+}
+.top
+{
+    color:#eaece5
+}
+a.top:hover
+{
+    color:white
+
+}
