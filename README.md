@@ -2,7 +2,7 @@
 
 ####
 
-This is an advanced version of my homepage lab where it is more interactive and more stylish. HTML, CSS, Javascript, and Bootstrap is embeded into this project.
+This is an advanced version of my homepage lab where it is more interactive and more stylish. Using cs50ide, HTML, CSS, Javascript, and Bootstrap is embeded into this project.
 
 ####
 
