@@ -6,4 +6,4 @@ This is an advanced version of my homepage lab where it is more interactive and 
 
 ####
 
-Click on any html to see code. 
+Click on any html to see code in the folder advancedhomepage.html. 
